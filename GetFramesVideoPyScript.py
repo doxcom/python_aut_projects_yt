@@ -49,7 +49,7 @@ def add_timestamp_to_path(base_path):
         str: Path with timestamp appended
     """
     # Get current timestamp
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    timestamp = datetime.now().strftime("%Y_%m_%d_%H-%M-%S")
 
     # Convert to Path object for easier manipulation
     path_obj = Path(base_path)
